@@ -4,7 +4,7 @@
     <title>Feeds</title>
   </head>
   <body>
-  <outline title="1. Recent Breaches" text="1. Recent Breaches">
+  <outline title="1. Recent Breaches" text="Recent Breaches">
 <outline type="rss" title="Recent Breaches - canada - alberta " text="Recent Breaches - canada - alberta " htmlUrl="https://news.google.com/_/rss/search?gl=CA&amp;ned=ca&amp;q=data+breach+++alberta&amp;hl=en-GB&amp;gl=GB&amp;ceid=GB:en" xmlUrl="https://news.google.com/_/rss/search?gl=CA&amp;ned=ca&amp;q=data+breach+++alberta&amp;hl=en-GB&amp;gl=GB&amp;ceid=GB:en"/>
 <outline type="rss" title="Recent Breaches - canada - labrador " text="Recent Breaches - canada - labrador " htmlUrl="https://news.google.com/_/rss/search?gl=CA&amp;ned=ca&amp;q=data+breach+++labrador&amp;hl=en-GB&amp;gl=GB&amp;ceid=GB:en" xmlUrl="https://news.google.com/_/rss/search?gl=CA&amp;ned=ca&amp;q=data+breach+++labrador&amp;hl=en-GB&amp;gl=GB&amp;ceid=GB:en"/>
 <outline type="rss" title="Recent Breaches - canada - manitoba " text="Recent Breaches - canada - manitoba " htmlUrl="https://news.google.com/_/rss/search?gl=CA&amp;ned=ca&amp;q=data+breach+++manitoba&amp;hl=en-GB&amp;gl=GB&amp;ceid=GB:en" xmlUrl="https://news.google.com/_/rss/search?gl=CA&amp;ned=ca&amp;q=data+breach+++manitoba&amp;hl=en-GB&amp;gl=GB&amp;ceid=GB:en"/>
@@ -165,7 +165,7 @@
 <outline type="rss" title="Government Security - USA - US-CERT Alerts" text="USA - US-CERT Alerts" htmlUrl="https://www.us-cert.gov/ncas/alerts.xml" xmlUrl="https://www.us-cert.gov/ncas/alerts.xml"/>
 </outline>
 
-<outline title="4. Post Secondary Security and IT Alerts" text="4. Post Secondary Security and IT Alerts">
+<outline title="Post Secondary Security and IT Alerts" text="Post Secondary Security and IT Alerts">
 <outline type="rss" title="Post Secondary - Canada - Mount Royal - IT Security Blog" text="Post Secondary - Canada - Mount Royal - IT Security Blog" htmlUrl="http://blogs.mtroyal.ca/itsecurityawareness/feed/" xmlUrl="http://blogs.mtroyal.ca/itsecurityawareness/feed/"/>
 
 <outline type="rss" title="Post Secondary - Canada - University of British Columbia - Bulletins" text="Post Secondary - Canada - University of British Columbia - Bulletins" htmlUrl="https://bulletins.it.ubc.ca/archives/category/security/feed" xmlUrl="https://bulletins.it.ubc.ca/archives/category/security/feed"/>
