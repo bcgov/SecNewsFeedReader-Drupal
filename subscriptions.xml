@@ -4,7 +4,7 @@
     <title>Feeds</title>
   </head>
   <body>
-  <outline title="1. Recent Breaches" text="Recent Breaches">
+  <outline title="Recent Breaches" text="Recent Breaches">
 <outline type="rss" title="Recent Breaches - canada - alberta " text="Recent Breaches - canada - alberta " htmlUrl="https://news.google.com/_/rss/search?gl=CA&amp;ned=ca&amp;q=data+breach+++alberta&amp;hl=en-GB&amp;gl=GB&amp;ceid=GB:en" xmlUrl="https://news.google.com/_/rss/search?gl=CA&amp;ned=ca&amp;q=data+breach+++alberta&amp;hl=en-GB&amp;gl=GB&amp;ceid=GB:en"/>
 <outline type="rss" title="Recent Breaches - canada - labrador " text="Recent Breaches - canada - labrador " htmlUrl="https://news.google.com/_/rss/search?gl=CA&amp;ned=ca&amp;q=data+breach+++labrador&amp;hl=en-GB&amp;gl=GB&amp;ceid=GB:en" xmlUrl="https://news.google.com/_/rss/search?gl=CA&amp;ned=ca&amp;q=data+breach+++labrador&amp;hl=en-GB&amp;gl=GB&amp;ceid=GB:en"/>
 <outline type="rss" title="Recent Breaches - canada - manitoba " text="Recent Breaches - canada - manitoba " htmlUrl="https://news.google.com/_/rss/search?gl=CA&amp;ned=ca&amp;q=data+breach+++manitoba&amp;hl=en-GB&amp;gl=GB&amp;ceid=GB:en" xmlUrl="https://news.google.com/_/rss/search?gl=CA&amp;ned=ca&amp;q=data+breach+++manitoba&amp;hl=en-GB&amp;gl=GB&amp;ceid=GB:en"/>
@@ -79,7 +79,7 @@
 <outline type="rss" title="Recent Breaches - usa (united states) " text="Recent Breaches - usa (united states) " htmlUrl="https://news.google.com/_/rss/search?gl=CA&amp;ned=ca&amp;q=data+breach+++united+states&amp;hl=en-GB&amp;gl=GB&amp;ceid=GB:en" xmlUrl="https://news.google.com/_/rss/search?gl=CA&amp;ned=ca&amp;q=data+breach+++united+states&amp;hl=en-GB&amp;gl=GB&amp;ceid=GB:en"/>
 </outline>
 
-<outline title="2. IT Supplier Security Alerts" text="2. IT Supplier Security Alerts">
+<outline title="IT Supplier Security Alerts" text="IT Supplier Security Alerts">
 <outline type="rss" title="IT Supplier Security - Acer" text="IT Supplier Security - Acer" htmlUrl="https://www.cvedetails.com/vulnerability-feed.php?vendor_id=5508&amp;product_id=0&amp;version_id=0&amp;hasexp=0&amp;opec=0&amp;opov=0&amp;opcsrf=0&amp;opfileinc=0&amp;opgpriv=0&amp;opsqli=0&amp;opxss=0&amp;opdirt=0&amp;opmemc=0&amp;ophttprs=0&amp;opbyp=0&amp;opginf=0&amp;opdos=0&amp;orderby=3&amp;cvssscoremin=7" xmlUrl="https://www.cvedetails.com/vulnerability-feed.php?vendor_id=5508&amp;product_id=0&amp;version_id=0&amp;hasexp=0&amp;opec=0&amp;opov=0&amp;opcsrf=0&amp;opfileinc=0&amp;opgpriv=0&amp;opsqli=0&amp;opxss=0&amp;opdirt=0&amp;opmemc=0&amp;ophttprs=0&amp;opbyp=0&amp;opginf=0&amp;opdos=0&amp;orderby=3&amp;cvssscoremin=7"/>
 <outline type="rss" title="IT Supplier Security - Amazon" text="IT Supplier Security - Amazon" htmlUrl="https://www.cvedetails.com/vulnerability-feed.php?vendor_id=12126&amp;product_id=0&amp;version_id=0&amp;hasexp=0&amp;opec=0&amp;opov=0&amp;opcsrf=0&amp;opfileinc=0&amp;opgpriv=0&amp;opsqli=0&amp;opxss=0&amp;opdirt=0&amp;opmemc=0&amp;ophttprs=0&amp;opbyp=0&amp;opginf=0&amp;opdos=0&amp;orderby=3&amp;cvssscoremin=7" xmlUrl="https://www.cvedetails.com/vulnerability-feed.php?vendor_id=12126&amp;product_id=0&amp;version_id=0&amp;hasexp=0&amp;opec=0&amp;opov=0&amp;opcsrf=0&amp;opfileinc=0&amp;opgpriv=0&amp;opsqli=0&amp;opxss=0&amp;opdirt=0&amp;opmemc=0&amp;ophttprs=0&amp;opbyp=0&amp;opginf=0&amp;opdos=0&amp;orderby=3&amp;cvssscoremin=7"/>
 <outline type="rss" title="IT Supplier Security - Amazon Web Services" text="IT Supplier Security - Amazon Web Services" htmlUrl="https://aws.amazon.com/new/feed/" xmlUrl="https://aws.amazon.com/new/feed/"/>
@@ -97,12 +97,10 @@
 <outline type="rss" title="IT Supplier Security - Debian - Advisories" text="IT Supplier Security - Debian - Advisories" htmlUrl="http://www.linuxsecurity.com/static-content/debian.rss" xmlUrl="http://www.linuxsecurity.com/static-content/debian.rss"/>
 <outline type="rss" title="IT Supplier Security - Debian" text="IT Supplier Security - Debian" htmlUrl="https://www.debian.org/security/dsa-long" xmlUrl="https://www.debian.org/security/dsa-long"/>
 <outline type="rss" title="IT Supplier Security - Dell" text="IT Supplier Security - Dell" htmlUrl="https://www.cvedetails.com/vulnerability-feed.php?vendor_id=2234&amp;product_id=0&amp;version_id=0&amp;hasexp=0&amp;opec=0&amp;opov=0&amp;opcsrf=0&amp;opfileinc=0&amp;opgpriv=0&amp;opsqli=0&amp;opxss=0&amp;opdirt=0&amp;opmemc=0&amp;ophttprs=0&amp;opbyp=0&amp;opginf=0&amp;opdos=0&amp;orderby=3&amp;cvssscoremin=7" xmlUrl="https://www.cvedetails.com/vulnerability-feed.php?vendor_id=2234&amp;product_id=0&amp;version_id=0&amp;hasexp=0&amp;opec=0&amp;opov=0&amp;opcsrf=0&amp;opfileinc=0&amp;opgpriv=0&amp;opsqli=0&amp;opxss=0&amp;opdirt=0&amp;opmemc=0&amp;ophttprs=0&amp;opbyp=0&amp;opginf=0&amp;opdos=0&amp;orderby=3&amp;cvssscoremin=7"/>
-
 <outline type="rss" title="IT Supplier Security - EMC" text="IT Supplier Security - EMC" htmlUrl="https://www.cvedetails.com/vulnerability-feed.php?vendor_id=964&amp;product_id=0&amp;version_id=0&amp;hasexp=0&amp;opec=0&amp;opov=0&amp;opcsrf=0&amp;opfileinc=0&amp;opgpriv=0&amp;opsqli=0&amp;opxss=0&amp;opdirt=0&amp;opmemc=0&amp;ophttprs=0&amp;opbyp=0&amp;opginf=0&amp;opdos=0&amp;orderby=3&amp;cvssscoremin=7" xmlUrl="https://www.cvedetails.com/vulnerability-feed.php?vendor_id=964&amp;product_id=0&amp;version_id=0&amp;hasexp=0&amp;opec=0&amp;opov=0&amp;opcsrf=0&amp;opfileinc=0&amp;opgpriv=0&amp;opsqli=0&amp;opxss=0&amp;opdirt=0&amp;opmemc=0&amp;ophttprs=0&amp;opbyp=0&amp;opginf=0&amp;opdos=0&amp;orderby=3&amp;cvssscoremin=7"/>
 <outline type="rss" title="IT Supplier Security - Fedora - Advisories" text="IT Supplier Security - Fedora - Advisories" htmlUrl="http://www.linuxsecurity.com/static-content/fedora.rss" xmlUrl="http://www.linuxsecurity.com/static-content/fedora.rss"/>
 <outline type="rss" title="IT Supplier Security - Fedora Updates" text="IT Supplier Security - Fedora Updates" htmlUrl="https://bodhi.fedoraproject.org/rss/updates/?type=security" xmlUrl="https://bodhi.fedoraproject.org/rss/updates/?type=security"/>
 <outline type="rss" title="IT Supplier Security - FreeBSD - Advisories" text="IT Supplier Security - FreeBSD - Advisories" htmlUrl="http://www.linuxsecurity.com/static-content/freebsd.rss" xmlUrl="http://www.linuxsecurity.com/static-content/freebsd.rss"/>
-
 <outline type="rss" title="IT Supplier Security - Fujitsu" text="IT Supplier Security - Fujitsu" htmlUrl="https://www.cvedetails.com/vulnerability-feed.php?vendor_id=260&amp;product_id=0&amp;version_id=0&amp;hasexp=0&amp;opec=0&amp;opov=0&amp;opcsrf=0&amp;opfileinc=0&amp;opgpriv=0&amp;opsqli=0&amp;opxss=0&amp;opdirt=0&amp;opmemc=0&amp;ophttprs=0&amp;opbyp=0&amp;opginf=0&amp;opdos=0&amp;orderby=3&amp;cvssscoremin=7" xmlUrl="https://www.cvedetails.com/vulnerability-feed.php?vendor_id=260&amp;product_id=0&amp;version_id=0&amp;hasexp=0&amp;opec=0&amp;opov=0&amp;opcsrf=0&amp;opfileinc=0&amp;opgpriv=0&amp;opsqli=0&amp;opxss=0&amp;opdirt=0&amp;opmemc=0&amp;ophttprs=0&amp;opbyp=0&amp;opginf=0&amp;opdos=0&amp;orderby=3&amp;cvssscoremin=7"/>
 <outline type="rss" title="IT Supplier Security - Gentoo - Advisories" text="IT Supplier Security - Gentoo - Advisories" htmlUrl="http://www.linuxsecurity.com/static-content/gentoo.rss" xmlUrl="http://www.linuxsecurity.com/static-content/gentoo.rss"/>
 <outline type="rss" title="IT Supplier Security - Google Compute Engine - Security Bulletins" text="IT Supplier Security - Google Compute Engine - Security Bulletins" htmlUrl="https://cloud.google.com/feeds/compute-engine-security-bulletins.xml" xmlUrl="https://cloud.google.com/feeds/compute-engine-security-bulletins.xml"/>
@@ -141,7 +139,7 @@
 <outline type="rss" title="IT Supplier Security - Wordpress" text="IT Supplier Security - Wordpress" htmlUrl="https://wordpress.org/news/category/security/feed/" xmlUrl="https://wordpress.org/news/category/security/feed/"/>
 </outline>
 
-<outline title="3. Government Security Alerts" text="3. Government Security Alerts">
+<outline title="Government Security Alerts" text="Government Security Alerts">
 <outline type="rss" title="Government Security - Australia - Stay Smart Online - Alert Service" text="Australia - Stay Smart Online - Alert Service" htmlUrl="https://www.staysmartonline.gov.au/alerts/feed" xmlUrl="https://www.staysmartonline.gov.au/alerts/feed"/>
 <outline type="rss" title="Government Security - Canada - CanLII: Information Security" text="Canada - CanLII: Information Security" htmlUrl="https://www.canlii.org/en/search/rssSearch.do?rssExpiryDate=2019-09-22&amp;type=decision&amp;ccId=bcipc&amp;text=%22information%20security%22&amp;origType=decision&amp;origCcId=bcipc&amp;page=1" xmlUrl="https://www.canlii.org/en/search/rssSearch.do?rssExpiryDate=2019-09-22&amp;type=decision&amp;ccId=bcipc&amp;text=%22information%20security%22&amp;origType=decision&amp;origCcId=bcipc&amp;page=1"/>
 <outline type="rss" title="Government Security - Canada - Federal: Canadian Centre for Cyber Security - Events" text="Canada - Federal: Canadian Centre for Cyber Security - Events" htmlUrl="https://cyber.gc.ca/webservice/en/rss/events" xmlUrl="https://cyber.gc.ca/webservice/en/rss/events"/>
@@ -167,7 +165,6 @@
 
 <outline title="Post Secondary Security and IT Alerts" text="Post Secondary Security and IT Alerts">
 <outline type="rss" title="Post Secondary - Canada - Mount Royal - IT Security Blog" text="Post Secondary - Canada - Mount Royal - IT Security Blog" htmlUrl="http://blogs.mtroyal.ca/itsecurityawareness/feed/" xmlUrl="http://blogs.mtroyal.ca/itsecurityawareness/feed/"/>
-
 <outline type="rss" title="Post Secondary - Canada - University of British Columbia - Bulletins" text="Post Secondary - Canada - University of British Columbia - Bulletins" htmlUrl="https://bulletins.it.ubc.ca/archives/category/security/feed" xmlUrl="https://bulletins.it.ubc.ca/archives/category/security/feed"/>
 <outline type="rss" title="Post Secondary - Canada - University of British Columbia - Helpdesk Security News" text="Post Secondary - Canada - University of British Columbia - Helpdesk Security News" htmlUrl="https://helpdesk.eoas.ubc.ca/news/security.rss" xmlUrl="https://helpdesk.eoas.ubc.ca/news/security.rss"/>
 <outline type="rss" title="Post Secondary - Canada - University of Manitoba - UM Today - Information Security" text="Post Secondary - Canada - University of Manitoba - UM Today - Information Security" htmlUrl="http://news.umanitoba.ca/tag/information-security/feed/" xmlUrl="http://news.umanitoba.ca/tag/information-security/feed/"/>
@@ -192,7 +189,6 @@
 <outline type="rss" title="Security Company - FortiGuard Center - IR Advisories" text="Security Company - FortiGuard Center - IR Advisories" htmlUrl="https://fortiguard.com/rss/ir.xml" xmlUrl="https://fortiguard.com/rss/ir.xml"/>
 <outline type="rss" title="Security Company - F-Secure - News from the Lab" text="Security Company - F-Secure - News from the Lab" htmlUrl="https://labsblog.f-secure.com/feed/" xmlUrl="https://labsblog.f-secure.com/feed/"/>
 <outline type="rss" title="Security Company - F-Secure Labs - Security Blog" text="Security Company - F-Secure Labs - Security Blog" htmlUrl="https://www.f-secure.com/weblog/weblog.rss" xmlUrl="https://www.f-secure.com/weblog/weblog.rss"/>
-
 <outline type="rss" title="Security Company - Kaspersky Lab - official blog" text="Security Company - Kaspersky Lab - official blog" htmlUrl="https://www.kaspersky.com/blog/feed/" xmlUrl="https://www.kaspersky.com/blog/feed/"/>
 <outline type="rss" title="Security Company - McAfee" text="Security Company - McAfee" htmlUrl="https://securingtomorrow.mcafee.com/feed/" xmlUrl="https://securingtomorrow.mcafee.com/feed/"/>
 <outline type="rss" title="Security Company - Secunia Research - Vulnerabilities" text="Security Company - Secunia Research - Vulnerabilities" htmlUrl="http://feeds.feedburner.com/SecuniaResearch" xmlUrl="http://feeds.feedburner.com/SecuniaResearch"/>
@@ -207,11 +203,10 @@
 <outline type="rss" title="Security Company - Trend Micro - Feeds" text="Security Company - Trend Micro - Feeds" htmlUrl="http://feeds.trendmicro.com/cloud-security?format=xml" xmlUrl="http://feeds.trendmicro.com/cloud-security?format=xml"/>
 <outline type="rss" title="Security Company - Trend Micro - Newest Malware Advisories" text="Security Company - Trend Micro - Newest Malware Advisories" htmlUrl="http://feeds.trendmicro.com/MalwareAdvisories?format=xml" xmlUrl="http://feeds.trendmicro.com/MalwareAdvisories?format=xml"/>
 <outline type="rss" title="Security Company - Trend Micro - Security Advisories" text="Security Company - Trend Micro - Security Advisories" htmlUrl="http://feeds.trendmicro.com/TrendMicroSecurityAdvisories" xmlUrl="http://feeds.trendmicro.com/TrendMicroSecurityAdvisories"/>
-
 <outline type="rss" title="Security Company - Veracode" text="Security Company - Veracode" htmlUrl="https://www.veracode.com/blog/feed" xmlUrl="https://www.veracode.com/blog/feed"/>
 </outline>
 
-<outline title="6. General Security New and Blog Feeds" text="6. General Security New and Blog Feeds">
+<outline title="General Security New and Blog Feeds" text="General Security New and Blog Feeds">
 <outline type="rss" title="News - AppSec Street Fighter - SANS Institute" text="News - AppSec Street Fighter - SANS Institute" htmlUrl="https://software-security.sans.org/blog/feed/" xmlUrl="https://software-security.sans.org/blog/feed/"/>
 <outline type="rss" title="News - Ars Technica Security" text="News - Ars Technica Security" htmlUrl="http://feeds.arstechnica.com/arstechnica/security" xmlUrl="http://feeds.arstechnica.com/arstechnica/security"/>
 <outline type="rss" title="News - BankInfoSecurity" text="News - BankInfoSecurity" htmlUrl="http://feeds.feedburner.com/bankinfosecurity/com" xmlUrl="http://feeds.feedburner.com/bankinfosecurity/com"/>
@@ -249,7 +244,7 @@
 <outline type="rss" title="News - WPScan Vulnerability Database" text="News - WPScan Vulnerability Database" htmlUrl="https://wpvulndb.com/feed.xml" xmlUrl="https://wpvulndb.com/feed.xml"/>
 </outline>
 
-<outline title="7. Google Security Feeds" text="7. Google Security Feeds">
+<outline title="Google Security Feeds" text="Google Security Feeds">
 <outline type="rss" title="Google Security - amd vulnerability" text="Google Security - amd vulnerability" htmlUrl="https://news.google.com/_/rss/search?q=amd+vulnerability&amp;amp;hl=en-CA&amp;amp;gl=CA&amp;amp;ceid=CA:en" xmlUrl="https://news.google.com/_/rss/search?q=amd+vulnerability&amp;amp;hl=en-CA&amp;amp;gl=CA&amp;amp;ceid=CA:en"/>
 <outline type="rss" title="Google Security - apple vulnerability" text="Google Security - apple vulnerability" htmlUrl="https://news.google.com/_/rss/search?q=apple+vulnerability&amp;amp;hl=en-CA&amp;amp;gl=CA&amp;amp;ceid=CA:en" xmlUrl="https://news.google.com/_/rss/search?q=apple+vulnerability&amp;amp;hl=en-CA&amp;amp;gl=CA&amp;amp;ceid=CA:en"/>
 <outline type="rss" title="Google Security - cia cyber" text="Google Security - cia cyber" htmlUrl="https://news.google.com/_/rss/search?q=cia+cyber&amp;amp;hl=en-CA&amp;amp;gl=CA&amp;amp;ceid=CA:en" xmlUrl="https://news.google.com/_/rss/search?q=cia+cyber&amp;amp;hl=en-CA&amp;amp;gl=CA&amp;amp;ceid=CA:en"/>
@@ -277,7 +272,7 @@
 <outline type="rss" title="Google Security - zero-day" text="Google Security - zero-day" htmlUrl="https://news.google.com/_/rss/search?q=zero-day&amp;amp;hl=en-CA&amp;amp;gl=CA&amp;amp;ceid=CA:en" xmlUrl="https://news.google.com/_/rss/search?q=zero-day&amp;amp;hl=en-CA&amp;amp;gl=CA&amp;amp;ceid=CA:en"/>
 </outline>
 
-<outline title="8. Bing Security Feeds" text="8. Bing Security Feeds">
+<outline title="Bing Security Feeds" text="Bing Security Feeds">
 <outline type="rss" title="Bing Security - amd vulnerability" text="Bing Security - amd vulnerability" htmlUrl="https://www.bing.com/news/search?format=RSS&amp;q=amd+vulnerability&amp;qft=interval%3d%228%22+sortbydate%3d%221%22&amp;form=PTFTNR" xmlUrl="https://www.bing.com/news/search?format=RSS&amp;q=amd+vulnerability&amp;qft=interval%3d%228%22+sortbydate%3d%221%22&amp;form=PTFTNR"/>
 <outline type="rss" title="Bing Security - apple vulnerability" text="Bing Security - apple vulnerability" htmlUrl="https://www.bing.com/news/search?format=RSS&amp;q=apple+vulnerability&amp;qft=interval%3d%228%22+sortbydate%3d%221%22&amp;form=PTFTNR" xmlUrl="https://www.bing.com/news/search?format=RSS&amp;q=apple+vulnerability&amp;qft=interval%3d%228%22+sortbydate%3d%221%22&amp;form=PTFTNR"/>
 <outline type="rss" title="Bing Security - critical vulnerability" text="Bing Security - critical vulnerability" htmlUrl="https://www.bing.com/news/search?format=RSS&amp;q=critical+vulnerability&amp;qft=interval%3d%228%22+sortbydate%3d%221%22&amp;form=PTFTNR" xmlUrl="https://www.bing.com/news/search?format=RSS&amp;q=critical+vulnerability&amp;qft=interval%3d%228%22+sortbydate%3d%221%22&amp;form=PTFTNR"/>
@@ -292,7 +287,7 @@
 <outline type="rss" title="Bing Security - zero-day" text="Bing Security - zero-day" htmlUrl="https://www.bing.com/news/search?format=RSS&amp;q=zero-day" xmlUrl="https://www.bing.com/news/search?format=RSS&amp;q=zero-day"/>
 </outline>
 
-<outline title="9. Fraud Alerts" text="9. Fraud Alerts">
+<outline title="Fraud Alerts" text="Fraud Alerts">
 <outline type="rss" title="Fraud Alerts - Consumer Protection BC" text="Fraud Alerts - Consumer Protection BC" htmlUrl="https://www.consumerprotectionbc.ca/category/scams-and-fraud/feed/" xmlUrl="https://www.consumerprotectionbc.ca/category/scams-and-fraud/feed/"/>
 <outline type="rss" title="Fraud Alerts - DocuSign" text="Fraud Alerts - DocuSign" htmlUrl="https://www.docusign.com/trust/alerts/feed" xmlUrl="https://www.docusign.com/trust/alerts/feed"/>
 <outline type="rss" title="Fraud Alerts - IT at Brown Phishing Alerts" text="Fraud Alerts - IT at Brown Phishing Alerts" htmlUrl="https://it.brown.edu/alerts/phishing/rss.xml" xmlUrl="https://it.brown.edu/alerts/phishing/rss.xml"/>
