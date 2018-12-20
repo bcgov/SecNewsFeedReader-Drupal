@@ -176,7 +176,7 @@
 <outline type="rss" title="Post Secondary - USA - University of Colorado Boulder" text="Post Secondary - USA - University of Colorado Boulder" htmlUrl="https://oit.colorado.edu/aggregator/rss" xmlUrl="https://oit.colorado.edu/aggregator/rss"/>
 </outline>
 
-<outline title="5. Security Company Alerts" text="5. Security Company Alerts">
+<outline title="Security Company Alerts" text="Security Company Alerts">
 <outline type="rss" title="Security Company - Absolute Security - Insider" text="Security Company - Absolute Security - Insider" htmlUrl="https://blogs.absolute.com/feed/" xmlUrl="https://blogs.absolute.com/feed/"/>
 <outline type="rss" title="Security Company - Avast" text="Security Company - Avast" htmlUrl="https://blog.avast.com/rss.xml" xmlUrl="https://blog.avast.com/rss.xml"/>
 <outline type="rss" title="Security Company - Avira - Latest Threats Descriptions" text="Security Company - Avira - Latest Threats Descriptions" htmlUrl="https://www.avira.com/en/threats.xml" xmlUrl="https://www.avira.com/en/threats.xml"/>
