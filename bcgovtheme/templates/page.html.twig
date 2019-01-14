@@ -1,0 +1,384 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" prefix="dcterms: http://purl.org/dc/terms/ mbcterms: http://www2.gov.bc.ca/StaticWebResources/static/shared/schema/mbcterms.rdf">
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<!--set view port and allow mobile users to choose between responsive and large views-->
+		<!-- check view port cookie -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+		<!-- metadata -->
+
+
+
+
+		<!-- if the page type is search and dynNav is to be displayed, need to include 'dyn_nav_compiled.js' -->
+<!-- google scripts -->
+	<script>
+	/**
+	 * HTML element names for the search form, the spellchecking suggestion, and the
+	 * cluster suggestions. The search form must have the following input elements:
+	 * "q" (for search box), "site", "client".
+	 * @type {string}
+	 */
+	var ss_form_element = 'suggestion_form'; // search form
+
+	/**
+	 * Name of search suggestion drop down.
+	 * @type {string}
+	 */
+	var ss_popup_element = 'search_suggest'; // search suggestion drop-down
+
+	/**
+	 * Types of suggestions to include.  Just one options now, but reserving the
+	 * code for more types
+	 *   g - suggest server
+	 * Array sequence determines how different suggestion types are shown.
+	 * Empty array would effectively turn off suggestions.
+	 * @type {object}
+	 */
+	var ss_seq = [ 'g' ];
+
+	 /**
+	  * 'close' string
+	  */
+	var ss_close_text = 'close';
+
+	/**
+	 * Suggestion type name to display when there is only one suggestion.
+	 * @type {string}
+	 */
+	var ss_g_one_name_to_display = 'Suggestion';
+
+	/**
+	 * Suggestion type name to display when there are more than one suggestions.
+	 * @type {string}
+	 */
+	var ss_g_more_names_to_display = 'Suggestions';
+
+	/**
+	 * The max suggestions to display for different suggestion types.
+	 * No-positive values are equivalent to unlimited.
+	 * For key matches, -1 means using GSA default (not tagging numgm parameter),
+	 * 0 means unlimited.
+	 * Be aware that GSA has a published max limit of 10 for key matches.
+	 * @type {number}
+	 */
+	var ss_g_max_to_display = 10;
+
+	/**
+	 * The max suggestions to display for all suggestion types.
+	 * No-positive values are equivalent to unlimited.
+	 * @type {number}
+	 */
+	var ss_max_to_display = 12;
+
+	/**
+	 * Idling interval for fast typers.
+	 * @type {number}
+	 */
+	var ss_wait_millisec = 0;
+
+	/**
+	 * Delay time to avoid contention when drawing the suggestion box by various
+	 * parallel processes.
+	 * @type {number}
+	 */
+	var ss_delay_millisec = 30;
+
+	/**
+	 * Host name or IP address of GSA.
+	 * Null value can be used if the JS code loads from the GSA.
+	 * For local test, use null if there is a <base> tag pointing to the GSA,
+	 * otherwise use the full GSA host name
+	 * @type {string}
+	 */
+	 //############################### provide your proxy url here
+	//var ss_gsa_host = ":8080/enSearch/callMyProxy";
+
+	/**
+	 * Constant that represents legacy output format.
+	 * @type {string}
+	 */
+	var SS_OUTPUT_FORMAT_LEGACY = 'legacy';
+
+	/**
+	 * Constant that represents OpenSearch output format.
+	 * @type {string}
+	 */
+	var SS_OUTPUT_FORMAT_OPEN_SEARCH = 'os';
+
+	/**
+	 * Constant that represents rich output format.
+	 * @type {string}
+	 */
+	var SS_OUTPUT_FORMAT_RICH = 'rich';
+
+	/**
+	 * What suggest request API to use.
+	 *   legacy - use current protocol in 6.0
+	 *            Request: /suggest?token=<query>&max_matches=<num>&use_similar=0
+	 *            Response: [ "<term 1>", "<term 2>", ..., "<term n>" ]
+	 *                   or
+	 *                      [] (if no result)
+	 *   os -     use OpenSearch protocol
+	 *            Request: /suggest?q=<query>&max=<num>&site=<collection>&client=<frontend>&access=p&format=os
+	 *            Response: [
+	 *                        "<query>",
+	 *                        [ "<term 1>", "<term 2>", ... "<term n>" ],
+	 *                        [ "<content 1>", "<content 2>", ..., "<content n>" ],
+	 *                        [ "<url 1>", "<url 2>", ..., "<url n>" ]
+	 *                      ] (where the last two elements content and url are optional)
+	 *                   or
+	 *                      [ <query>, [] ] (if no result)
+	 *   rich -   use rich protocol from search-as-you-type
+	 *            Request: /suggest?q=<query>&max=<num>&site=<collection>&client=<frontend>&access=p&format=rich
+	 *            Response: {
+	 *                        "query": "<query>",
+	 *                        "results": [
+	 *                          { "name": "<term 1>", "type": "suggest", "content": "<content 1>", "style": "<style 1>", "moreDetailsUrl": "<url 1>" },
+	 *                          { "name": "<term 2>", "type": "suggest", "content": "<content 2>", "style": "<style 2>", "moreDetailsUrl": "<url 2>" },
+	 *                          ...,
+	 *                          { "name": "<term n>", "type": "suggest", "content": "<content n>", "style": "<style n>", "moreDetailsUrl": "<url n>" }
+	 *                        ]
+	 *                      } (where type, content, style, moreDetailsUrl are optional)
+	 *                   or
+	 *                      { "query": <query>, "results": [] } (if no result)
+	 * If unspecified or null, using legacy protocol.
+	 * @type {string}
+	 */
+	var ss_protocol = SS_OUTPUT_FORMAT_RICH;
+
+	/**
+	 * Whether to allow non-query suggestion items.
+	 * Setting it to false can bring results from "os" and "rich" responses into
+	 * backward compatible with "legacy".
+	 * @type {boolean}
+	 */
+	var ss_allow_non_query = true;
+
+	/**
+	 * Default title text when the non-query suggestion item does not have a useful
+	 * title.
+	 * The default display text should be internalionalized.
+	 * @type {string}
+	 */
+	var ss_non_query_empty_title =
+	    "No Title";
+
+	/**
+	 * Whether debugging is allowed.  If so, toggle with F2 key.
+	 * @type {boolean}
+	 */
+	var ss_allow_debug = false;
+	</script>
+
+
+		<![endif]-->
+
+
+
+
+	</head>
+
+<body class="environment-prod">
+<!-- googleoff:all -->
+		<div id="header">
+	<div id="header-main" class="navbar navbar-default navbar-fixed-top">
+		<!--  Display Notifications Message Bar - RA-55 - Danger, Info or Success -->
+		<div class="container">
+			<div id="header-main-row1" class="row">
+				<div class="header-main-left">
+					<div id="logo" role="banner">
+      {# Header #}
+      {% if page.header %}
+        {% block header %}
+          <div class="col-sm-12" role="heading">
+		  <h1>
+            {{ page.header }}
+</h1>
+			</div>
+        {% endblock %}
+      {% endif %}
+						</div>
+					<div id="access">
+						<ul>
+							<li aria-label="Skip to main content">
+								<a href="#main-content-anchor">Skip to main content</a>
+							</li>
+							<li aria-label="Skip to main navigation">
+								<a href="#header-links" onclick="window.scrollTo(0,0);">Skip to main navigation</a>
+							</li>
+							<li aria-label="Skip to side navigation">
+									<a href="#secondary-navigation-anchor">Skip to side navigation</a>
+								</li>
+							<li aria-label="Accessibility Statement">
+								<a href="/gov/content/accessibility">Accessibility Statement</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- googleon:all -->
+		<div id="topicTemplate" class="template container">
+
+	<div class="row yes" lang="en">
+			<div class="printHeader">
+				<div class="printHeader">
+					<a href="https://www2.gov.bc.ca/gov/content/home" alt="Government of B.C.">
+					</a>
+				</div>
+				<br> <br>
+			</div>
+			<!-- googleoff:all -->
+					{# Sidebar First #}
+					{% if page.sidebar_first %}
+						{% block sidebar_first %}
+							<aside class="col-sm-3" role="complementary">
+								{{ page.sidebar_first }}
+							</aside>
+						{% endblock %}
+					{% endif %}
+
+
+			<!-- googleon:all -->
+			<div id="main-content"
+				class="contentPageMainColumn keywordHighlight col-sm-9 col-md-7 col-lg-9"
+				role="main">
+<div class="topicThemeCarousel excludeKeywordHighlight">
+</div>
+
+		<div id="introduction">
+  <!-- body -->
+   {# Highlighted #}
+        {% if page.highlighted %}
+          {% block highlighted %}
+            <div class="highlighted">{{ page.highlighted }}</div>
+          {% endblock %}
+        {% endif %}
+
+        {# Help #}
+        {% if page.help %}
+          {% block help %}
+            {{ page.help }}
+          {% endblock %}
+        {% endif %}
+
+        {# Content #}
+        {% block content %}
+          {{ page.content }}
+					{{ content }}
+        {% endblock %}
+
+
+  <!-- end body-->
+</div>
+		</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-3"></div>
+			<!-- googleoff:all -->
+			<div class="col-sm-9">
+
+
+
+
+
+
+
+
+</div>
+		</div>
+
+	</div>
+
+
+<!-- googleoff:all -->
+		<div id="shareIcons">
+
+</div><div id="footer">
+
+
+	<div id="footerWrapper">
+
+
+		<div id="footerCollapsible">
+
+			<div id="footerContainer" class="container">
+
+				<div id="footerMediaLinks" class="row">
+					<h2 class="pull-left">Connect With Us</h2>
+						<div class="col-xs-12 col-sm-9">
+			
+					</div>
+
+					<hr class="col-xs-12" />
+				</div>
+
+				<div id="footerAZLinks" class="row hidden-xs">
+				
+						<div class="col-sm-4">
+			
+					</div>
+
+	
+
+					<hr class="hidden-md hidden-lg col-xs-12" />
+				</div>
+
+				
+
+			</div>
+		</div>
+
+		<div id="footerAdminSection">
+			<div id="footerAdminLinksContainer" class="container">
+				<div id="footerAdminLinks" class="row">
+					<ul class="inline">
+						<li id="replicantData_64BB7AFB6346453E96CF3F8EFE745151" data-order="0">
+									<a href="https://www2.gov.bc.ca/gov/content/home" target="_self" tabindex="0">Home</a>
+
+</li>
+						<li id="replicantData_E65457FFB5BF4A589E1291B94B989557" data-order="1">
+									<a href="https://www2.gov.bc.ca/gov/content/about-gov-bc-ca" target="_self" tabindex="0">About gov.bc.ca</a>
+
+</li>
+						<li id="replicantData_2E18DFD9524A4C95A9601ABF261EC70E" data-order="2">
+									<a href="https://www2.gov.bc.ca/gov/content/home/disclaimer" target="_self" tabindex="0">Disclaimer</a>
+
+</li>
+						<li id="replicantData_F960821F16BB43799D89D309EB9C1318" data-order="3">
+									<a href="https://www2.gov.bc.ca/gov/content/home/privacy" target="_self" tabindex="0">Privacy</a>
+
+</li>
+						<li id="replicantData_0123F79F761A47EDB9B7DE8FE4EB591A" data-order="4">
+									<a href="https://www2.gov.bc.ca/gov/content/home/accessibility" target="_self" tabindex="0">Accessibility</a>
+
+</li>
+						<li id="replicantData_68A5C36D97E445EDB9C87F10D9C3472F" data-order="5">
+									<a href="https://www2.gov.bc.ca/gov/content/home/copyright" target="_self" tabindex="0">Copyright</a>
+
+</li>
+						<li id="replicantData_5C329F040B414B62A8802DFC7072C39E" data-order="6">
+									<a href="https://www2.gov.bc.ca/gov/content/home/contact-us" target="_self" tabindex="0">Contact Us</a>
+
+</li>
+
+							</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- googleon:all -->
+</body>
