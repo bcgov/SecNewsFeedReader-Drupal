@@ -149,7 +149,7 @@
             "containers": [
               {
                 "name": "drupal-web",
-                "image": "jubicoy/drupal:8.6.4",
+                "image": "jubicoy/drupal:8-latest",
                 "ports": [
                   {
                     "containerPort": 5000,
