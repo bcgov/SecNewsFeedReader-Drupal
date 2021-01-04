@@ -7,5 +7,5 @@ spec:
     status: PIA_STATUS_HERE
     last-updated: '2020-01-17T00:09:08.948Z'
   - name: STRA
-    status: STRA_STATUS_HERE
+    status: COMPLETED
     last-updated: '2020-01-17T00:09:08.948Z'
